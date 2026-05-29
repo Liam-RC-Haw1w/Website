@@ -3,20 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
+    <title>News - Western Province Deaf Cricket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-  <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="sponsors.html">Sponsors</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="news.html">News</a></li>
-  </ul>
-</nav>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="images/WPDC Logo.jpeg" alt="Western Province Deaf Cricket Logo" class="nav-logo">
+                <div>
+                    <div class="nav-brand-title">Western Province</div>
+                    <div class="nav-brand-subtitle">Deaf Cricket</div>
+                </div>
+            </a>
 
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="news.html" class="nav-link active">News</a>
+            </div>
+
+            <button class="nav-toggle" onclick="toggleMobileMenu()">
+                <span class="menu-icon">☰</span>
+            </button>
+        </div>
+
+        <div class="nav-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-link-mobile">Home</a>
+            <a href="about.html" class="nav-link-mobile">About</a>
+            <a href="sponsors.html" class="nav-link-mobile">Sponsors</a>
+            <a href="gallery.html" class="nav-link-mobile">Gallery</a>
+            <a href="contact.html" class="nav-link-mobile">Contact</a>
+            <a href="news.html" class="nav-link-mobile active">News</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="content-section">
+            <div class="container">
+                <div class="text-center section-header">
+                    <h1 class="text-primary">News & Events</h1>
+                    <p class="subtitle">Stay updated with the latest news, announcements, and upcoming events</p>
+                </div>
+
+                <!-- Latest News -->
+                <div class="section-block">
+                    <h2 class="text-primary">Latest News</h2>
+                    <div class="news-list">
+                        <article class="news-card">
+                            <div class="news-header">
+                                <span class="news-category">Tournament</span>
+                                <span class="news-date">March 25, 2026</span>
+                            </div>
+                            <h3 class="text-primary">WP Deaf Cricket Wins Regional T20 Championship</h3>
+                            <p>Our team claimed victory in the Regional T20 Championship, defeating Gauteng Deaf Cricket in a thrilling final. Captain Sipho Mthembu led from the front with an outstanding performance.</p>
+                        </article>
+
+                        <article class="news-card">
+                            <div class="news-header">
+                                <span class="news-category">Development</span>
+                                <span class="news-date">March 10, 2026</span>
+                            </div>
+                            <h3 class="text-primary">New Training Program Launches for Youth Players</h3>
+                            <p>We're excited to announce a new youth development program aimed at nurturing the next generation of deaf cricket talent in the Western Province region.</p>
+                        </article>
+
+                        <article class="news-card">
+                            <div class="news-header">
+                                <span class="news-category">Partnership</span>
+                                <span class="news-date">February 28, 2026</span>
+                            </div>
+                            <h3 class="text-primary">Partnership Announced with Cape Town Cricket Association</h3>
+                            <p>WP Deaf Cricket has entered into a strategic partnership with the Cape Town Cricket Association to improve facilities and expand opportunities for our players.</p>
+                        </article>
+
+                        <article class="news-card">
+                            <div class="news-header">
+                                <span class="news-category">Announcement</span>
+                                <span class="news-date">February 15, 2026</span>
+                            </div>
+                            <h3 class="text-primary">Season Fixtures Announced for 2026</h3>
+                            <p>The complete fixture list for the 2026 season has been released. We have an exciting schedule ahead with matches against top deaf cricket teams nationwide.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="section-block">
+                    <h2 class="text-primary">Upcoming Events</h2>
+                    <div class="events-grid">
+                        <div class="event-card">
+                            <div class="event-date">📅 April 25, 2026</div>
+                            <h3 class="text-white">Open Trials Day</h3>
+                            <p>9:00 AM - 4:00 PM</p>
+                            <p>Newlands Cricket Ground</p>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">📅 May 8, 2026</div>
+                            <h3 class="text-white">Community Cricket Clinic</h3>
+                            <p>10:00 AM - 2:00 PM</p>
+                            <p>Cape Town Cricket Club</p>
+                        </div>
+                        <div class="event-card">
+                            <div class="event-date">📅 June 20, 2026</div>
+                            <h3 class="text-white">Annual Fundraising Gala</h3>
+                            <p>6:00 PM - 10:00 PM</p>
+                            <p>Western Province Cricket Club/p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/WPDC Logo.jpeg" alt="Western Province Deaf Cricket Logo">
+                        <div>
+                            <div class="footer-brand-title">Western Province</div>
+                            <div class="footer-brand-subtitle">Deaf Cricket</div>
+                        </div>
+                    </div>
+                    <p>Breaking barriers and building champions through inclusive cricket excellence in the Western Province region.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="images/twitter.svg" alt="Twitter"></a>
+                        <a href="#" class="social-icon"><img src="images/instagram.svg" alt="Instagram"></a>
+                        <a href="mailto:info@wpdeafcricket.co.za" class="social-icon"><img src="images/email.svg" alt="Email"></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Western Province Deaf Cricket. All rights reserved.</p>
+                <p>Empowering deaf athletes through cricket excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,37 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About - Western Province Deaf Cricket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="sponsors.html">Sponsors</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="news.html">News</a></li>
-  </ul>
-</nav>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="images/WPDC Logo.jpeg" alt="Western Province Deaf Cricket Logo" class="nav-logo">
+                <div>
+                    <div class="nav-brand-title">Western Province</div>
+                    <div class="nav-brand-subtitle">Deaf Cricket</div>
+                </div>
+            </a>
 
-<section>
-  <h1>Organisation Overview</h1>
-  <p></p>
-</section>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="news.html" class="nav-link">News</a>
+            </div>
 
-<section>
-  <h2>WPDC History</h2>
-  <p>History details go here.</p>
-</section>
+            <button class="nav-toggle" onclick="toggleMobileMenu()">
+                <span class="menu-icon">☰</span>
+            </button>
+        </div>
 
-<section>
-  <h2>Executive Committee</h2>
-  
-  <img src="Exec1.png" alt="Executive">
-  <img src="Exec2.png" alt="Executive2">
+        <div class="nav-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-link-mobile">Home</a>
+            <a href="about.html" class="nav-link-mobile active">About</a>
+            <a href="sponsors.html" class="nav-link-mobile">Sponsors</a>
+            <a href="gallery.html" class="nav-link-mobile">Gallery</a>
+            <a href="contact.html" class="nav-link-mobile">Contact</a>
+            <a href="news.html" class="nav-link-mobile">News</a>
+        </div>
+    </nav>
 
+    <!-- Main Content -->
+    <main>
+        <div class="content-section">
+            <div class="container">
+                <div class="text-center section-header">
+                    <h1 class="text-primary">About Western Province Deaf Cricket</h1>
+                    <p class="subtitle">A South African organisation dedicated to promoting cricket among deaf and hard-of-hearing players</p>
+                </div>
 
+                <!-- Stats -->
+                <div class="card stats-card">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            
+                            <div class="stat-value">5</div>
+                            <div class="stat-label">Championships Won</div>
+                        </div>
+                        <div class="stat-item">
+                            
+                            <div class="stat-value">20</div>
+                            <div class="stat-label">Active Players</div>
+                        </div>
+                        <div class="stat-item">
+                        
+                            <div class="stat-value">30</div>
+                            <div class="stat-label">Years Active</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- History -->
+                <div class="card">
+                    <h2 class="text-primary">Our History</h2>
+                    <p>Western Province Deaf Cricket was established to fill a crucial gap in South African sports, providing opportunities for deaf and hard-of-hearing cricket players to participate in competitive sport at regional and national levels.</p>
+                    <p>Over the past 30 years, we have grown from a small group of passionate players into a well-organized cricket club that represents the Western Province region. We have developed our skills, won championships, and most importantly, created a supportive community where athletes can thrive.</p>
+                    <p>Our organisation plays a key role in advancing inclusivity in sport, breaking down barriers, and demonstrating that cricket is for everyone, regardless of hearing ability.</p>
+                </div>
+
+                <!-- Committee Card -->
+                <div class="section-block">
+                    <h2 class="text-center text-primary">Our Committee</h2>
+                    <div class="committee-images">
+                        <img src="images/Comittee 1.png" alt="Committee Members" class="committee-img">
+                        <img src="images/Comittee 2.png" alt="Committee Members" class="committee-img">
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="section-block">
+                    <h2 class="text-center text-primary">Our Core Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                          
+                            <h3 class="text-primary">Inclusivity</h3>
+                            <p>Creating opportunities for all deaf and hard-of-hearing athletes</p>
+                        </div>
+                        <div class="value-card">
+                            
+                            <h3 class="text-primary">Excellence</h3>
+                            <p>Striving for the highest standards in competitive cricket</p>
+                        </div>
+                        <div class="value-card">
+                            
+                            <h3 class="text-primary">Community</h3>
+                            <p>Building lasting friendships and strong team bonds</p>
+                        </div>
+                        <div class="value-card">
+                            
+                            <h3 class="text-primary">Development</h3>
+                            <p>Continuous skill improvement and player growth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Who We Serve -->
+                <div class="card bg-light">
+                    <h2 class="text-primary">Who We Serve</h2>
+                    <div class="serve-grid">
+                        <div>
+                            <h3 class="text-blue">Deaf & Hard-of-Hearing Athletes</h3>
+                            <p>Players of all skill levels looking to compete in cricket</p>
+                        </div>
+                        <div>
+                            <h3 class="text-blue">Cricket Fans</h3>
+                            <p>Supporters passionate about inclusive sports</p>
+                        </div>
+                        <div>
+                            <h3 class="text-blue">Sponsors & Donors</h3>
+                            <p>Organizations supporting accessibility in sport</p>
+                        </div>
+                        <div>
+                            <h3 class="text-blue">Schools & Community Groups</h3>
+                            <p>Educational institutions promoting inclusivity</p>
+                        </div>
+                        <div>
+                            <h3 class="text-blue">Volunteers</h3>
+                            <p>Individuals dedicated to helping our organization grow</p>
+                        </div>
+                        <div>
+                            <h3 class="text-blue">Coaches</h3>
+                            <p>Experienced mentors committed to player development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/WPDC Logo.jpeg" alt="Western Province Deaf Cricket Logo">
+                        <div>
+                            <div class="footer-brand-title">Western Province</div>
+                            <div class="footer-brand-subtitle">Deaf Cricket</div>
+                        </div>
+                    </div>
+                    <p>Breaking barriers and building champions through inclusive cricket excellence in the Western Province region.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="images/twitter.svg" alt="Twitter"></a>
+                        <a href="#" class="social-icon"><img src="images/instagram.svg" alt="Instagram"></a>
+                        <a href="mailto:info@wpdeafcricket.co.za" class="social-icon"><img src="images/email.svg" alt="Email"></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Western Province Deaf Cricket. All rights reserved.</p>
+                <p>Empowering deaf athletes through cricket excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

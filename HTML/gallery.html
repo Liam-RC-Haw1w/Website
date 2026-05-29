@@ -3,41 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Gallery - Western Province Deaf Cricket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-  <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="sponsors.html">Sponsors</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="news.html">News</a></li>
-  </ul>
-</nav>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="images/WPDC Logo.jpeg" alt="Western Province Deaf Cricket Logo" class="nav-logo">
+                <div>
+                    <div class="nav-brand-title">Western Province</div>
+                    <div class="nav-brand-subtitle">Deaf Cricket</div>
+                </div>
+            </a>
 
-<section>
-  <h1>Photos</h1>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="sponsors.html" class="nav-link">Sponsors</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="news.html" class="nav-link">News</a>
+            </div>
 
-  <h2> Our 30th Anniversary!</h2>
-  <img src="Photoshoot.png" width="100">
-  <img src="" width="100">
-</section>
+            <button class="nav-toggle" onclick="toggleMobileMenu()">
+                <span class="menu-icon">☰</span>
+            </button>
+        </div>
 
-<section>
-  <h2>Videos</h2>
-  <video controls width="300">
-    <source src="" type="video/mp4">
-  </video>
-</section>
+        <div class="nav-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-link-mobile">Home</a>
+            <a href="about.html" class="nav-link-mobile">About</a>
+            <a href="sponsors.html" class="nav-link-mobile">Sponsors</a>
+            <a href="gallery.html" class="nav-link-mobile active">Gallery</a>
+            <a href="contact.html" class="nav-link-mobile">Contact</a>
+            <a href="news.html" class="nav-link-mobile">News</a>
+        </div>
+    </nav>
 
-<section>
-  <h2>Highlights</h2>
-  <p></p>
-</section>
+    <!-- Main Content -->
+    <main>
+        <div class="content-section">
+            <div class="container">
+                <div class="text-center section-header">
+                    <h1 class="text-primary">Gallery</h1>
+                    <p class="subtitle">Capturing moments of excellence, teamwork, and celebration</p>
+                </div>
 
+                <!-- Category Selection -->
+                <div id="galleryCategories" class="gallery-categories">
+                    <button class="category-card" onclick="showGalleryCategory('Tournaments')">
+                        <h2 class="text-primary">Tournaments</h2>
+                        <p>Regional and national championship matches</p>
+                        <div class="category-link">View Gallery →</div>
+                    </button>
+                    <button class="category-card" onclick="showGalleryCategory('Club Matches')">
+                        <h2 class="text-primary">Club Matches</h2>
+                        <p>Local club games and friendly matches</p>
+                        <div class="category-link">View Gallery →</div>
+                    </button>
+                    <button class="category-card" onclick="showGalleryCategory('Events')">
+                        <h2 class="text-primary">Events</h2>
+                        <p>Team events, celebrations, and gatherings</p>
+                        <div class="category-link">View Gallery →</div>
+                    </button>
+                </div>
 
+                <!-- Photo Grid (Hidden by default) -->
+                <div id="galleryPhotos" class="gallery-photos hidden">
+                    <div class="gallery-header">
+                        <button class="btn-back" onclick="showGalleryCategories()">← Back to Categories</button>
+                        <h2 class="text-center text-primary" id="galleryTitle"></h2>
+                    </div>
+                    <div class="photo-grid" id="photoGrid"></div>
+                </div>
+
+                <!-- Submit Photos CTA -->
+                <div class="card bg-light text-center">
+                    <h2 class="text-primary">Share Your Photos</h2>
+                    <p>Do you have photos from our matches or events? We'd love to feature them in our gallery!</p>
+                    <a href="contact.html" class="btn btn-primary">Submit Photos</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/WPDC Logo.jpeg" alt="Western Province Deaf Cricket Logo">
+                        <div>
+                            <div class="footer-brand-title">Western Province</div>
+                            <div class="footer-brand-subtitle">Deaf Cricket</div>
+                        </div>
+                    </div>
+                    <p>Breaking barriers and building champions through inclusive cricket excellence in the Western Province region.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><img src="images/facebook.svg" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="images/twitter.svg" alt="Twitter"></a>
+                        <a href="#" class="social-icon"><img src="images/instagram.svg" alt="Instagram"></a>
+                        <a href="mailto:info@wpdeafcricket.co.za" class="social-icon"><img src="images/email.svg" alt="Email"></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Western Province Deaf Cricket. All rights reserved.</p>
+                <p>Empowering deaf athletes through cricket excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
