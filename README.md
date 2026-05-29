@@ -48,6 +48,9 @@ Site Map:
 ![SiteMap](images/SiteMap.png)
 
 
+CHANGES MADE:
+
+
 Updated Timeline based on feedback: 
 
 <img width="1381" height="623" alt="Screenshot 2026-05-25 224257" src="https://github.com/user-attachments/assets/04b2c685-40f0-4476-be4f-92bf47bad185" />
@@ -65,6 +68,9 @@ Updated Site Map based on feedback:
 <img width="1432" height="591" alt="WEDE Ice Task 1" src="https://github.com/user-attachments/assets/8d4015ae-ba62-4f9e-90fa-50337fbc6d70" />
 
 
+Added images to the website and css styling. Based on my feedback I had to make changes to the timeline and site map. The content of part 1 was lacking which I also have made changes to improve. I have created more commits to ensure there are commits. 
+
+
 
 
 
@@ -73,5 +79,5 @@ References:
 The mission statement on the index.html file line 33-34 - 
 Western Province Deaf Cricket (n.d.) Our Mission. Available at: https://wpdeafcricket.co.za (Accessed: 20 April 2026).
 
-All images are provided by the Western Province Deaf Cricket Team. 
+All images are provided by the Western Province Deaf Cricket Team or taken by me. 
 
