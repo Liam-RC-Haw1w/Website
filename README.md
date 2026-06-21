@@ -70,7 +70,7 @@ Updated Site Map based on feedback:
 
 Added images to the website and css styling. Based on my feedback I had to make changes to the timeline and site map. The content of part 1 was lacking which I also have made changes to improve. I have created more commits to ensure there are commits. 
 
-
+Added a hosting for the website in Github pages
 
 
 
